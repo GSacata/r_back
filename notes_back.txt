@@ -38,7 +38,14 @@ MELHORIAS
 
 
 REFERÊNCIAS
-
+https://github.com/GSacata/tp-backend.git
+https://www.django-rest-framework.org/topics/html-and-forms/
+https://www.bezkoder.com/django-angular-13-crud/
+https://docs.djangoproject.com/en/5.0/ref/models/fields/
+https://www.django-rest-framework.org/api-guide/viewsets/
+https://www.youtube.com/watch?v=5dzZF6jWLb4&list=PLsTx8TSx2fHY01FnuxBdwiBiOdZdPGik7&index=2
+https://www.youtube.com/watch?v=BjxBtw5CW68&list=PLsTx8TSx2fHY01FnuxBdwiBiOdZdPGik7&index=6 -> https://youtu.be/BjxBtw5CW68?list=PLsTx8TSx2fHY01FnuxBdwiBiOdZdPGik7&t=390
+https://www.treinaweb.com.br/blog/o-que-e-cors-e-como-resolver-os-principais-erros
 
 
 NOTAS
@@ -48,3 +55,19 @@ venv\Scripts\activate
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
+
+
+python manage.py shell
+from todolist.models import Task
+from todolist.serializers import TaskSerializer
+todo1 = Task()
+todo1.title = "título"
+todo1.save()
+
+PARA VER AS TAREFAS NO BANCO ATUALMENTE
+from todolist.models import Task
+from todolist.serializers import TaskSerializer
+todo = Task.objects.first()
+serializer = TaskSerializer(todo)
+serializer.data
+Out[5]: {'id': 1, 'title': 'Entregar prova do desenvolvimento', 'is_done': False, 'created': '2024-02-24T20:46:09.091622Z'}
