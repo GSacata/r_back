@@ -25,6 +25,13 @@ abrir e testar
 
 
 TESTES
+Pelo back django REST (sem interação do front)
+[-] (GET) Pegar tarefas geral e tarefas específicas.
+[-] (POST) Criar uma tarefa, seguindo modelo correto
+[-] (PUT) Atualizar uma tarefa.
+[-] (DELETE) Apagar uma tarefa.
+
+Pelo front angular
 [ ] (GET) Pegar tarefas geral e tarefas específicas.
 [ ] (POST) Criar uma tarefa, seguindo modelo correto
 [ ] (PUT) Atualizar uma tarefa.
@@ -35,6 +42,7 @@ TESTES
 MELHORIAS
 [ ] 21:10 17/04/2024 esbarrei num trecho do backend hoje, parece que usa funções ao invés de classes para as viewsets, talvez seja interessante eu fazer um modelo alternativo de viewset que se baseie em funções ao invés das classes da generics.
 [ ] Enriquecer corpo de tarefa com descrição.
+[ ] Melhorar corpo da tarefa com ID (por favor, né)
 
 
 
