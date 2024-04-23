@@ -1,3 +1,20 @@
+CLONANDO E ATIVANDO O PROJETO
+PASSO A PASSO
+0. (Windows) Certifique-se de ter instalada em seu computador a linguagem Python.
+1. Em seu git bash, usar "git clone 'link_deste_repositorio'";
+2. Em seu terminal, use os seguintes comandos entre aspas duplas, na ordem:
+3. "Set-ExecutionPolicy Unrestricted -Scope Process" (caso seu computador não permita execuções de scripts 'externos', essa linha permitirá a execução enquanto o terminal estiver aberto);
+4. Crie um ambiente virtual em python. Sugestão: "python -m venv venv";
+5. Ative o ambiente virtual criado com "venv\Scripts\activate";
+6. Para instalar os pacotes usados neste projeto insira o comando "pip install -r requirements.txt";
+7. Para entrar na pasta de seu projeto, use "cd backend";
+8. Use "python manage.py migrate" para propagar mudanças dos modelos na tabela do db.
+9. Para rodar o projeto Django + Django REST, em seu terminal use "python manage.py runserver";
+10. Copie o link que aparecer, e insira em seu navegador de preferência. Durante o desenvolvimento do projeto, tal link foi "http://127.0.0.1:8000/";
+FIM
+
+
+
 ENUNCIADO
 Este teste tem como objetivo avaliar suas habilidades nas linguagens Type Script e Python, utilizando os frameworks Angular 8, Django e Django Rest Framework. Também iremos avaliar suas habilidades em seguir tutoriais e aprendizado de novas tecnologias. Utilizando estes frameworks você deverá criar um aplicativo de TODO list.
 Requerimentos
@@ -32,10 +49,10 @@ Pelo back django REST (sem interação do front)
 [-] (DELETE) Apagar uma tarefa.
 
 Pelo front angular
-[ ] (GET) Pegar tarefas geral e tarefas específicas.
-[ ] (POST) Criar uma tarefa, seguindo modelo correto
-[ ] (PUT) Atualizar uma tarefa.
-[ ] (DELETE) Apagar uma tarefa.
+[-] (GET) Pegar tarefas geral e tarefas específicas.
+[-] (POST) Criar uma tarefa, seguindo modelo correto
+[-] (PUT) Atualizar uma tarefa.
+[-] (DELETE) Apagar uma tarefa.
 
 
 
@@ -55,6 +72,7 @@ https://www.django-rest-framework.org/api-guide/viewsets/
 https://www.youtube.com/watch?v=5dzZF6jWLb4&list=PLsTx8TSx2fHY01FnuxBdwiBiOdZdPGik7&index=2
 https://www.youtube.com/watch?v=BjxBtw5CW68&list=PLsTx8TSx2fHY01FnuxBdwiBiOdZdPGik7&index=6 -> https://youtu.be/BjxBtw5CW68?list=PLsTx8TSx2fHY01FnuxBdwiBiOdZdPGik7&t=390
 https://www.treinaweb.com.br/blog/o-que-e-cors-e-como-resolver-os-principais-erros
+
 
 
 NOTAS
