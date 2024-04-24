@@ -11,6 +11,7 @@ PASSO A PASSO
 8. Use "python manage.py migrate" para propagar mudanças dos modelos na tabela do db.
 9. Para rodar o projeto Django + Django REST, em seu terminal use "python manage.py runserver";
 10. Copie o link que aparecer, e insira em seu navegador de preferência. Durante o desenvolvimento do projeto, tal link foi "http://127.0.0.1:8000/";
+11. Neste ponto o backend já deve estar no ar. Se quiser ter uma visualização do backend usando os moldes do Django REST, na URL adicione no link "/todolist".
 FIM
 
 
